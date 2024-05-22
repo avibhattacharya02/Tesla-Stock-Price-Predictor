@@ -68,7 +68,6 @@ for i, col in enumerate(['Open', 'High', 'Low', 'Close']):
 plt.show()
 
 
-# In[ ]:
 
 
 
