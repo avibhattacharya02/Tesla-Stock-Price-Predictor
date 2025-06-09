@@ -42,13 +42,18 @@ Project Structure
 
 The project contains the following files:
 
-tesla_stock_analysis.py: The main script for performing the data analysis and generating visualizations.
-TeslaStockPrice.csv: The dataset with Tesla's stock prices.
-Visualizations
+tesla_stock_analysis.py: 🧠 Model Performance Summary
+This project compares the performance of three machine learning models for classification tasks: Logistic Regression, Support Vector Classifier (SVC) with a polynomial kernel, and XGBoost Classifier.
 
-The script will create several visualizations to help understand the data, including:
+📊 Results:
+Model	Training Accuracy	Validation Accuracy
+Logistic Regression	0.5192	0.5435
+SVC (Polynomial Kernel)	0.4717	0.4468
+XGBoost Classifier	0.9645	0.5730
 
-A line plot of the closing prices over time.
-Distribution plots for the Open, High, Low, Close, and Volume columns.
-Box plots for the Open, High, Low, Close, and Volume columns.
-Bar plots showing the average Open, High, Low, and Close prices by year.
+🔍 Observations:
+XGBoost performed the best overall but showed signs of overfitting (high training accuracy vs. validation).
+
+Logistic Regression provided more balanced performance and may generalize better on unseen data.
+
+SVC with polynomial kernel underperformed and may not be suitable for this dataset.
